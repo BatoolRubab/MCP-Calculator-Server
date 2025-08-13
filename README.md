@@ -1,5 +1,6 @@
 # MCP-Calculator-Server
 A minimal, production-ready Model Context Protocol (MCP) server that exposes a collection of math utilities (arithmetic, trigonometry, algebra, number theory) via the Python MCP SDK’s FastMCP (mcp.server.fastmcp.FastMCP).
+
 ✨ Features
 
 Simple, readable implementation using FastMCP
