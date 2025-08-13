@@ -41,3 +41,19 @@ The following tools are available for AI agents to call:
 - Square root of negative numbers raises a ValueError.
 - Factorial of negative numbers raises a ValueError.
 - Logarithms with invalid inputs (non-positive numbers or invalid bases) raise a ValueError.
+
+## Extending the Server
+Add new tools by decorating functions with @mcp.tool() and using clear type hints + docstrings. Example:
+@mcp.tool()
+def nth_fibonacci(n: int) -> int:
+    """Return the nth Fibonacci number (n >= 0)"""
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+  Restart the server to expose new tools.
+
+
+
