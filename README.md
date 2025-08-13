@@ -33,3 +33,11 @@ The following tools are available for AI agents to call:
 - lcm(a: int, b: int) -> int: Calculate least common multiple.
 - is_prime(n: int) -> bool: Check if a number is prime.
 - quadratic_roots(a: float, b: float, c: float) -> tuple: Solve quadratic equation ax² + bx + c = 0.
+
+## Error Handling
+
+- The tools include robust error handling:
+- Division by zero raises a ValueError.
+- Square root of negative numbers raises a ValueError.
+- Factorial of negative numbers raises a ValueError.
+- Logarithms with invalid inputs (non-positive numbers or invalid bases) raise a ValueError.
