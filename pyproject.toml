@@ -1,0 +1,10 @@
+[project]
+name = "mcp-calculator-server"
+version = "0.1.0"
+description = "An advanced calculator MCP server with mathematical operations"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.9.1",
+    "mcp[cli]>=1.10.1",
+]
